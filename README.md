@@ -1,4 +1,4 @@
-# 6
+# 256
 A small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
 Made just for fun. [Play it here!](http://secretwolf98.github.io/)
@@ -22,4 +22,4 @@ Changes and improvements are more than welcome! Feel free to fork and open a pul
 You can find the same information in the [contributing guide.](https://github.com/gabrielecirulli/2048/blob/master/CONTRIBUTING.md)
 
 ## License
-6 is licensed under the [MIT license.](https://github.com/secretwolf98/secretwolf98.github.io/blob/master/LICENSE.txt)
+256 is licensed under the [MIT license.](https://github.com/secretwolf98/secretwolf98.github.io/blob/master/LICENSE.txt)
