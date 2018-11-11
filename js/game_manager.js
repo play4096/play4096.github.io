@@ -8,6 +8,20 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
+  window.onbeforeunload = function(e) {
+    var remote = require('remote');
+    var dialog = remote.require('dialog');
+    var choice = dialog.showMessageBox(
+            remote.getCurrentWindow(),
+            {
+                type: 'question',
+                buttons: ['Yes', 'No'],
+                title: 'Confirm',
+                message: 'Are you sure you want to restart the game?'
+            });
+
+    return choice === 0;
+};
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
 
   this.setup();
