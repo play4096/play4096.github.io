@@ -21,6 +21,19 @@
 				#notification-area .notification-message .block-content-wrap { padding-top: 0; }
 				.snowball #notification-area .notification-message .block-content-wrap { width: 75%; }</style>  
 			</div>
+  window.onbeforeunload = function(e) {
+    var remote = require('remote');
+    var dialog = remote.require('dialog');
+    var choice = dialog.showMessageBox(
+            remote.getCurrentWindow(),
+            {
+                type: 'question',
+                buttons: ['Yes', 'No'],
+                title: 'Confirm',
+                message: 'This game uses cookies and cache. Are you sure you want to continue to the game?'
+            });
+     return choice === 0;
+};
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42620757-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -106,11 +119,11 @@
     </p>
     <hr>
     <p>
-    <strong class="important">This game was last updated on:</strong> November 10, 2018
+    <strong class="important">This game was last updated on:</strong> November 11, 2018
     </p>
     <hr>
     <p>
-    <strong class="important">Version:</strong> 1.0
+    <strong class="important">Version:</strong> 1.1
     </p>
     <hr>
     <p>
