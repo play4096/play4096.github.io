@@ -17,7 +17,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
                 type: 'question',
                 buttons: ['Yes', 'No'],
                 title: 'Confirm',
-                message: 'Are you sure you want to restart the game?'
+                message: 'Are you sure you want to restart the game? You will lose your current data! This can not be undone!'
             });
 
     return choice === 0;
